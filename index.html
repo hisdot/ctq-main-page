@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="story.js"></script>
+    <div>
+        <center>
+
+            <h1 class="title">전력량 소비</h1>
+        </center>
+    </div>
+    <style>
+        .title {
+            border-bottom: 1px solid black;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            border-radius: 50px;
+            justify-content: center;
+
+        }
+    </style>
+    <div class="main">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <div class="bottom"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    </div>
+    <canvas id="circle" width="1000" height="1000" style="border:0px solid black;"></canvas>
+    <script>
+        const color = ['red', 'green', 'yellow', 'blue']
+        var c = document.getElementById("circle");
+        var n1 = c.getContext("2d");
+        n1.fillStyle = color[0]
+        n1.beginPath();
+        n1.arc(500, 500, 300, 0, 2 * Math.PI);
+        n1.stroke();
+    </script>
+    <style>
+        .circle {
+            align-self: center;
+        }
+    </style>
+</body>
+
+</html>
